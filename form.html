@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Hutt</title>
+    <style>
+        form .basic label{
+        display: block;
+        margin-top: 10px;
+        }
+        .basic{
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,11 +22,22 @@
         <section>
              <h2>Mobile Hutt</h2>
              <form>
-                <label for="name">Your Name</label>
+                
+                <fieldset class="basic">
+                <legend>Your Info</legend>
+                <label for="name">Your Name</label>  
                 <input type="text" name="" id="name">
-
+                
                 <label for="email">Your email</label>
                 <input type="email" name="" id="email">
+                
+                <label for="Number">Your Number</label>
+                <input type="number" name="" id="Number">
+                
+                </fieldset>
+ 
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Clear">
 
                 <fieldset>
                     <legend>Mobile's collection</legend>
@@ -31,9 +51,23 @@
 
                 <fieldset>
                     <legend>Model Selection</legend>
-                    <input type="radio" name="" id="S24 Ultra">
-                    <label for="S24 Ultra">S24 ultra</label>
+                     
+                    <input type="checkbox" name="" id="">
+                    <label for="S25 Ultra"> Galaxy S25 Ultra</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="17 Pro max">Iphone 17 Pro max</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="X300 pro">Vivo X300 Ultra</label>
                 </fieldset>
+                
+                <fieldset>
+                    <legend>Customer Review</legend>
+                   <textarea cols="60" rows="4" name="" id=""></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+                
+                  
              </form>
         </section>
     </main>
